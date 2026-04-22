@@ -14,6 +14,7 @@ protected:
     int burnTurns = 0;
     int freezeTurns = 0;
     int bleedTurns = 0;
+    int electroTurns = 0;
 
 public:
     vector<Ability> abilities;
@@ -41,6 +42,7 @@ public:
 
     void healSelf(int value){
         Hp += value;
+        if(Hp > MaxHp) Hp = MaxHp;
     }
 
     Effect useAbility(int indx){
@@ -54,22 +56,31 @@ public:
 
         if (e.poison) poisonTurns = 3;
         if (e.burn) burnTurns = 2;
-        if (e.freeze) freezeTurns = 1;
+        if (e.freeze) freezeTurns = 2;
         if (e.bleed) bleedTurns = 3;
+        if (e.electro) electroTurns = 2;
     }
 
     bool ifFrozen(){
         return freezeTurns > 0;
     }
 
+    float getCritModifier() const {
+        return (electroTurns > 0) ? 0.5f : 1.0f;
+    }
+
+    bool ifElectrocuted() const {
+        return electroTurns > 0;
+    }
+
     void updateStatus(){
         if(poisonTurns > 0){
-            Hp -=5;
+            Hp -=4;
             poisonTurns--;
         }
 
         if(burnTurns > 0){
-            Hp -= 7;
+            Hp -= 5;
             burnTurns--;
         }
 
@@ -78,8 +89,13 @@ public:
         }
 
         if (bleedTurns > 0){
-            Hp -= 6;
+            Hp -= 5;
             bleedTurns--;
+        }
+
+        if (electroTurns > 0){
+            Hp -= 3;
+            electroTurns--;
         }
 
         if (Hp < 0) Hp=0;
