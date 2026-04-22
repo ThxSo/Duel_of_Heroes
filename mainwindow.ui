@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="Menu">
+     <widget class="QPushButton" name="Start">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>180</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Exit">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>260</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>30</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Duel of Heros</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Result">
+     <widget class="QLabel" name="resultLabel">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>90</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>               Result</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnRestart">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>200</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Restart</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnChar">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>250</y>
+        <width>121</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Choice of characters</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnMenu">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>300</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Menu</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Character">
+     <widget class="QPushButton" name="btnSword">
+      <property name="geometry">
+       <rect>
+        <x>135</x>
+        <y>200</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sword Man</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSamurai">
+      <property name="geometry">
+       <rect>
+        <x>135</x>
+        <y>300</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Samurai</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnFast">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>200</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fast Archer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnHeavyArcher">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>300</y>
+        <width>101</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Heavy Archer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnFire">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>200</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fire Mage</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnIce">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>300</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ice Mage</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnElectro">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>400</y>
+        <width>101</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Electro Mage</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>315</x>
+        <y>40</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter your character</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnCross">
+      <property name="geometry">
+       <rect>
+        <x>325</x>
+        <y>400</y>
+        <width>111</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cross Bow Man</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnLongMan">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>400</y>
+        <width>111</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Long Sword Man</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>130</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Knights</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>130</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Archers</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>130</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mages</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Back">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Game">
+     <widget class="QPushButton" name="btn1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>450</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Attak 1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn2">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>450</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Attak 2</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn3">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>450</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Attak 3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="enemylogLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>181</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>logLabel</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSkip">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>530</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Skip</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="playerHpBar">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>400</y>
+        <width>161</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>100</number>
+      </property>
+      <property name="textVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="enemyHpBar">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>70</y>
+        <width>161</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>100</number>
+      </property>
+      <property name="textVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="playerlogLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>310</y>
+        <width>181</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>logLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="playerclass">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>350</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Playar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="enemyclass">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>120</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enemy</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
