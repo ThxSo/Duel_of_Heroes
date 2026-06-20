@@ -11,6 +11,13 @@ MainWindow::MainWindow(QWidget *parent)
     enemy = nullptr;
     selectedClass = -1;
 
+    QFile styleFile(":/style.qss");
+    if(styleFile.open(QFile::ReadOnly)) {
+        QString styleSheet = QLatin1String(styleFile.readAll());
+        qApp->setStyleSheet(styleSheet);
+        styleFile.close();
+    }
+
     ui->stackedWidget->setCurrentWidget(ui->Menu);
 }
 
